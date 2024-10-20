@@ -1,13 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\Payments\StripePaymentController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/payment', [PaymentController::class, 'index']);
+Route::get('/payment', [StripePaymentController::class, 'index']);
 
-//used service pattern to create payment intent
-Route::post('/create-payment-intent', [PaymentController::class, 'createPaymentIntent']);
+Route::post('/create-payment-intent', [StripePaymentController::class, 'createPaymentIntent']);
