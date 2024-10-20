@@ -6,7 +6,7 @@ I have used  "php": "^8.2", and "laravel/framework": "^11.9".
 ## For Laravel 11, the minimum PHP version required is PHP 8.1/8.2.
 
 ```bash
-git clone 
+git clone https://github.com/ruhulamin63/Stripe-Payment-Service.git
 ```
 
 ```bash
